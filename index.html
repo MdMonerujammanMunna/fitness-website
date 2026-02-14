@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awasome cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- google font cdn link -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fitness</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        :root {
+            --main-color: #E6533C;
+            --text-color: #ffffff50
+        }
+
+        #hovee {
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+
+        #hovee:hover {
+            background-color: var(--main-color);
+        }
+    </style>
+</head>
+
+<body class="bg-[#000000] font-[Inter] text-white sm:mx-[20px] md:mx-[30px] lg:mx-[100px]">
+    <header class="mt-[60px]">
+        <nav class="flex justify-between items-center">
+            <div class="text-[var(--main-color)]">
+                <h1 class="text-4xl font-bold italic cursor-pointer">Fitness</h1>
+            </div>
+            <div class="border-2 border-[#ffffff10] rounded-full hidden md:block">
+                <ul class="flex items-center text-[18px] gap-[50px] p-[4px]">
+                    <li class="cursor-pointer" id="hovee">Home</li>
+                    <li class="cursor-pointer" id="hovee">Service</li>
+                    <li class="cursor-pointer" id="hovee">Contact</li>
+                    <li class="cursor-pointer" id="hovee">About</li>
+                </ul>
+            </div>
+            <div class="block md:hidden text-[24px] px-[10px] py-[8px] hover:bg-[var(--main-color)] rounded-[5px]">
+                <i class="fa-solid fa-bars "></i>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
